@@ -25,8 +25,15 @@
     // 💰 The example in the markdown file should be a good hint for you.
 
     const type = 'div'
-    const props = {className: 'container', children: 'Hello World'}
-    const reactElement = React.createElement(type, props)
+    const type2 = 'span'
+
+    const props = {className: 'container'}
+    const props2 = {children: 'Hello'}
+    const props3 = {children: 'World'}
+
+    const span1 = React.createElement(type2, props2)
+    const span2 = React.createElement(type2, props3)
+    const reactElement = React.createElement(type, props, span1, ' ',span2)
 
     ReactDOM.render(reactElement, rootElement)
   </script>
