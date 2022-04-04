@@ -12,9 +12,15 @@
     // const element = <div className="container">Hello World</div>
 
     // Extra credit 1
-    const className = 'container'
+    // const className = 'container'
+    // const children = 'Hello World'
+    // const element = <div className={className}>{children}</div>
+
+    // Extra credit 2
     const children = 'Hello World'
-    const element = <div className={className}>{children}</div>
+    const className = 'container'
+    const props = {children, className}
+    const element = <div {...props} />
     ReactDOM.render(element, document.getElementById('root'))
   </script>
 </body>
