@@ -7,9 +7,25 @@
   <script src="https://unpkg.com/react-dom@17.0.0/umd/react-dom.development.js"></script>
   <script src="https://unpkg.com/@babel/standalone@7.12.4/babel.js"></script>
   <script type="text/babel">
+    function Message({subject, greeting}) {
+      return (
+        <div className="message">
+          {greeting}, {subject}
+        </div>
+      )
+    }
 
-    function Message({children}) {
-      return <div className="message">{children}</div>
+    // Extra credits 3
+    const PropTypes = {
+      string(props, propName, componentName) {
+        if (typeof props[propName] !== 'string') {
+          return new Error('Incorrect subject')
+        }
+      },
+    }
+    Message.propTypes = {
+      subject: PropTypes.string,
+      greeting: PropTypes.string,
     }
 
     // Exercise 4
@@ -29,10 +45,18 @@
     // )
 
     // Extra credits 2
+    // const element = (
+    //   <div className="container">
+    //     <Message children='Hello World'/>
+    //     <Message children='Goodbye World'/>
+    //   </div>
+    // )
+
+    // Extra credits 3
     const element = (
       <div className="container">
-        <Message children='Hello World'/>
-        <Message children='Goodbye World'/>
+        <Message greeting="Hello" subject="World" />
+        <Message greeting="Goodbye" subject="World" />
       </div>
     )
 
