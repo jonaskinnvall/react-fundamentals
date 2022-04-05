@@ -6,6 +6,8 @@
   <script src="https://unpkg.com/react@17.0.0/umd/react.development.js"></script>
   <script src="https://unpkg.com/react-dom@17.0.0/umd/react-dom.development.js"></script>
   <script src="https://unpkg.com/@babel/standalone@7.12.4/babel.js"></script>
+  <script src="https://unpkg.com/prop-types@15.7.2/prop-types.js"></script>
+
   <script type="text/babel">
     function Message({subject, greeting}) {
       return (
@@ -16,16 +18,17 @@
     }
 
     // Extra credits 3
-    const PropTypes = {
-      string(props, propName, componentName) {
-        if (typeof props[propName] !== 'string') {
-          return new Error('Incorrect subject')
-        }
-      },
-    }
+    // const PropTypes = {
+    //   string(props, propName, componentName) {
+    //     if (typeof props[propName] !== 'string') {
+    //       return new Error('Incorrect subject')
+    //     }
+    //   },
+    // }
+
     Message.propTypes = {
-      subject: PropTypes.string,
-      greeting: PropTypes.string,
+      subject: PropTypes.string.isRequired,
+      greeting: PropTypes.string.isRequired,
     }
 
     // Exercise 4
@@ -52,7 +55,7 @@
     //   </div>
     // )
 
-    // Extra credits 3
+    // Extra credits 3 & 4
     const element = (
       <div className="container">
         <Message greeting="Hello" subject="World" />
