@@ -8,7 +8,7 @@
   <script src="https://unpkg.com/@babel/standalone@7.12.4/babel.js"></script>
   <script type="text/babel">
 
-    function message({children}) {
+    function Message({children}) {
       return <div className="message">{children}</div>
     }
 
@@ -21,10 +21,18 @@
     // )
 
     // Extra credit 1
+    // const element = (
+    //   <div className="container">
+    //     {React.createElement(message,{children: 'Hello World'})}
+    //     {React.createElement(message,{children: 'Goodbye World'})}
+    //   </div>
+    // )
+
+    // Extra credits 2
     const element = (
       <div className="container">
-        {React.createElement(message,{children: 'Hello World'})}
-        {React.createElement(message,{children: 'Goodbye World'})}
+        <Message children='Hello World'/>
+        <Message children='Goodbye World'/>
       </div>
     )
 
