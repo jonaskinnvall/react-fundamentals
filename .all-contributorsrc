@@ -500,7 +500,80 @@
       "contributions": [
         "test"
       ]
+    },
+    {
+      "login": "ozadari5",
+      "name": "Oz Adari",
+      "avatar_url": "https://avatars.githubusercontent.com/u/92675396?v=4",
+      "profile": "https://github.com/ozadari5",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "cRAN-cg",
+      "name": "Chiranjeev Gupta",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8614844?v=4",
+      "profile": "https://github.com/cRAN-cg",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "sunnatganiev",
+      "name": "Sunnatullo Ganiev",
+      "avatar_url": "https://avatars.githubusercontent.com/u/38115176?v=4",
+      "profile": "https://github.com/sunnatganiev",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "jcat4",
+      "name": "Joey Cardosi",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7866287?v=4",
+      "profile": "https://github.com/jcat4",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "Havock94",
+      "name": "Luca",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7635248?v=4",
+      "profile": "https://github.com/Havock94",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "anjola-adeuyi",
+      "name": "Anjola Adeuyi",
+      "avatar_url": "https://avatars.githubusercontent.com/u/57623705?v=4",
+      "profile": "https://www.linkedin.com/in/anjola-adeuyi/",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "ASPzoomin",
+      "name": "Sai Pavan",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20736334?v=4",
+      "profile": "https://github.com/ASPzoomin",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "jmurphyau",
+      "name": "James Murphy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/445432?v=4",
+      "profile": "https://github.com/jmurphyau",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
-  "skipCi": true
+  "skipCi": true,
+  "commitConvention": "angular"
 }
